@@ -1,3 +1,4 @@
+using Library.API.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,13 +36,10 @@ namespace Library.API
             });
 
 
-
-
             services.AddDbContext<Data.LibraryDbContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("Library"));
             });
-
-
+            services.AddScoped<IBookRepository, BookRepository>();
 
 
         }
