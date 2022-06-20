@@ -14,7 +14,10 @@ namespace Library.API.Controllers
     {
         private readonly IBookRepository bookRepository;
 
-        /* List<Models.Domain.Book> books = new List<Models.Domain.Book>() {
+        /*
+         * Poniżej pseudo baza danych w razie gdyby chciał Pan sprawdzić program u siebie, ponieważ u mnie aplikacja pobiera dane z SSMS
+         * 
+         * List<Models.Domain.Book> books = new List<Models.Domain.Book>() {
 
                  new Models.Domain.Book{
                      id= Guid.NewGuid(),
@@ -30,6 +33,30 @@ namespace Library.API.Controllers
                      year = 1878,
                      pages = 200,
                      author = "Ferenc Molnar"
+                 },
+
+                 new Models.Domain.Book{
+                     id= Guid.NewGuid(),
+                     title = "Quo Vadis",
+                     year = 1896,
+                     pages = 2000,
+                     author = "Henryk Sienkiewicz"
+                 },
+
+                 new Models.Domain.Book{
+                     id= Guid.NewGuid(),
+                     title = "W pustyni i w puszczy",
+                     year = 1911,
+                     pages = 1000,
+                     author = "Henryk Sienkiewicz"
+                 },
+
+                 new Models.Domain.Book{
+                     id= Guid.NewGuid(),
+                     title = "Kamienie na Szaniec",
+                     year = 1943,
+                     pages = 400,
+                     author = "Aleksander Kamiński"
                  }
              };*/
 
